@@ -1,0 +1,33 @@
+body {
+  min-width: 1280px;
+  font-family: "Raleway";
+  font-variant-numeric: proportional-nums lining-nums;
+  letter-spacing: 0;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../public/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.container {
+  width: 1120px;
+  margin: 32px auto;
+}
+
+.content {
+  background-color: rgba(112, 112, 112, 0.1);
+  backdrop-filter: blur(25px);
+  border-radius: 8px;
+}

@@ -1,0 +1,56 @@
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+}
+
+.weather-location {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+  &__city {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lg);
+    line-height: var(--font-height-lg);
+    text-align: center;
+    color: var(--light-color);
+  }
+}
+
+.weather-location__day,
+.weather-location__time,
+.weather-condition__text-label,
+.weather-condition__feels-like {
+  text-align: center;
+  color: var(--light-color);
+}
+
+.weather-temp {
+  font-weight: var(--font-weight-bold);
+  font-size: 112px;
+  line-height: 112px;
+  text-align: center;
+  color: var(--light-color);
+}
+
+.weather-condition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  
+  &__description {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+}

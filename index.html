@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/cloud.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <title>WeatherApp</title>
+  <script type="module" src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="background"></div>
+  <h1 class="visually-hidden">Weather App</h1>
+  <div class="container">
+    <div class="content">
+      <header class="header">
+        <a href="index.html" aria-label="Логотип" class="wrap-logo">
+          <img src="assets/logo.svg" aria-hidden="true" alt="">
+        </a>
+        <form class="search">
+          <label for="search-input" class="visually-hidden">Поиск по городу</label>
+          <input class="search__input" id="search-input" type="search" placeholder="Поиск по городу" autocomplete="off">
+          <button class="search__button" type="submit">
+            <img class="search__icon search__icon--search" src="assets/search.svg" alt="">
+            <img class="search__icon search__icon--close" src="assets/close.svg" alt="">
+          </button>
+        </form>
+      </header>
+      <main>
+        <section class="section-weather">
+          <div class="weather-info">
+            <div class="weather-location">
+              <h2 class="weather-location__city"></h2>
+              <span class="weather-location__day"></span>
+              <span class="weather-location__time"></span>
+            </div>
+            <div class="weather-temp">
+              <span>0°</span>
+            </div>
+            <div class="weather-condition">
+              <div class="weather-condition__description">
+                <img class="weather-condition__icon" src="assets/cloud.png" alt="current weather">
+                <span class="weather-condition__text-label"></span>
+              </div>
+              <span class="weather-condition__feels-like"></span>
+            </div>
+          </div>
+          <ul class="weather-group">
+            <li class="weather-item weather-item--humidity">
+
+              <div class="weather-item__header">
+                <h3 class="weather-item__title">Влажность</h3>
+                <img src="assets/humidity.png" class="icon-32" alt="Humidity">
+                <p class="weather-item__value"></p>
+              </div>
+
+              <div class="weather-item__bar">
+                <div class="progress-bar">
+                  <div class="bar-dot">
+                    <div class="bar-dot--back"></div>
+                  </div>
+                </div>
+
+                <div class="labels-bar">
+                  <span>0%</span>
+                  <span>100%</span>
+                </div>
+              </div>
+
+            </li>
+            <li class="weather-item weather-item--pressure">
+
+              <div class="weather-item__header">
+                <h3 class="weather-item__title">Давление</h3>
+                <img src="assets/barometer.png" class="icon-32" alt="Pressure">
+                <p class="weather-item__value"></p>
+              </div>
+
+              <div class="weather-item__bar">
+                <div class="pressure-bar">
+                  <div class="bar-dot">
+                    <div class="bar-dot--back"></div>
+                  </div>
+                </div>
+                <div class="labels-bar">
+                  <p></p>
+                </div>
+              </div>
+
+            </li>
+            <li class="weather-item weather-item--visibility">
+
+              <div class="weather-item__header">
+                <h3 class="weather-item__title">Видимость</h3>
+                <img src="assets/visibility.png" class="icon-32" alt="visibility">
+                <p class="weather-item__value"></p>
+              </div>
+
+              <div class="weather-item__bar">
+                <div class="progress-bar">
+                  <div class="bar-dot">
+                    <div class="bar-dot--back"></div>
+                  </div>
+                </div>
+
+                <div class="labels-bar">
+                  <p></p>
+                </div>
+              </div>
+
+            </li>
+            <li class="weather-item weather-item--sunrise weather-item--padding">
+
+              <div class="weather-item__header">
+                <h3 class="weather-item__title">Рассвет</h3>
+                <img src="assets/sunrise.png" class="icon-32" alt="sunrise">
+                <p class="weather-item__value"></p>
+              </div>
+
+              <div class="labels-bar">
+                <p></p>
+              </div>
+
+            </li>
+            <li class="weather-item weather-item--sunset weather-item--padding">
+
+              <div class="weather-item__header">
+                <h3 class="weather-item__title">Закат</h3>
+                <img src="assets/sunset.png" class="icon-32" alt="sunset">
+                <p class="weather-item__value"></p>
+              </div>
+
+              <div class="labels-bar">
+                <p></p>
+              </div>
+
+            </li>
+            <li class="weather-item weather-item--wind weather-item--padding">
+              <div class="weather-item__header">
+                <h3 class="weather-item__title">Сила ветра</h3>
+                <img src="assets/arrow.png" class="icon-32 arrow" alt="wind direction">
+                <p class="weather-item__value"></p>
+              </div>
+              <div class="labels-bar">
+                <p></p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="section-empty"></section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </div>
+</body>
+
+</html>
