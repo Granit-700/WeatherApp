@@ -1,0 +1,24 @@
+{
+  "name": "scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build": "sass scss/index.scss css/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Granit-700/WeatherApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Granit-700/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/Granit-700/WeatherApp#readme",
+  "devDependencies": {
+    "sass": "^1.102.0"
+  }
+}
