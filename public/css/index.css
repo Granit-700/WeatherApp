@@ -30,7 +30,7 @@ li {
   --visibility: 28;
   --pressure: 761;
   --dark-color: #202020;
-  --light-color: #F5F4F4;
+  --light-color: #f5f4f4;
   --font-weight-regular: 400;
   --font-size-base: 20px;
   --line-height-base: 24px;
@@ -136,10 +136,10 @@ body {
   align-items: center;
 }
 .search:hover {
-  background-color: #DADADA;
+  background-color: #dadada;
 }
 .search:has(input:focus) {
-  background-color: #DADADA;
+  background-color: #dadada;
 }
 .search:has(input:focus) .search__icon--search {
   display: none;
@@ -285,7 +285,13 @@ body {
   height: 8px;
   border-radius: 8px;
   overflow: hidden;
-  background: radial-gradient(circle at center, rgba(84, 84, 84, 0.4) 0%, rgba(138, 138, 138, 0.4) 25%, rgb(218, 218, 218) 75%, rgba(218, 218, 218, 0.4) 100%);
+  background: radial-gradient(
+    circle at center,
+    rgba(84, 84, 84, 0.4) 0%,
+    rgba(138, 138, 138, 0.4) 25%,
+    rgb(218, 218, 218) 75%,
+    rgba(218, 218, 218, 0.4) 100%
+  );
 }
 .weather-item__bar .pressure-bar .bar-dot {
   position: absolute;
